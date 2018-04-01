@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import styles from '${_.pascalCase(component)}.less';
 
 export class ${_.pascalCase(component)} extends Component {
   static propTypes = {
@@ -12,7 +13,7 @@ export class ${_.pascalCase(component)} extends Component {
 
   render() {
     return (
-      <div className="${_.kebabCase(feature)}-${_.kebabCase(component)}">
+      <div className={styles["${_.kebabCase(feature)}-${_.kebabCase(component)}"]}>
         Page Content: ${_.kebabCase(feature)}/${_.pascalCase(component)}
       </div>
     );

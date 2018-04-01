@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from '${_.pascalCase(component)}.less';
 
 export default class ${_.pascalCase(component)} extends Component {
   static propTypes = {
@@ -7,7 +8,7 @@ export default class ${_.pascalCase(component)} extends Component {
 
   render() {
     return (
-      <div className="${_.kebabCase(feature || 'component') + '-' + _.kebabCase(component)}">
+      <div className={styles=["${_.kebabCase(feature || 'component') + '-' + _.kebabCase(component)}"]}>
         Component content: ${_.kebabCase(feature)}/${_.pascalCase(component)}
       </div>
     );

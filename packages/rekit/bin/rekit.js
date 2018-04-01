@@ -77,7 +77,7 @@ createCmd.addArgument(['--clean', '-c'], {
 });
 
 createCmd.addArgument(['--template', '-t'], {
-  help: 'Which template to use for creating a project. Clone from "https://github.com/supnate/rekit-boilerplate-${template} Default to cra (create-react-app). If it\'s rekit. Then use supnate/rekit-boilerplate.',
+  help: 'Which template to use for creating a project. Clone from "https://github.com/khanghuynh92/rekit-boilerplate-${template} Default to cra (create-react-app). If it\'s rekit. Then use khanghuynh92/rekit-boilerplate.',
   defaultValue: 'cra',
 });
 

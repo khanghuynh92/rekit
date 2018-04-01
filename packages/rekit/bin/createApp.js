@@ -29,8 +29,8 @@ function createApp(args) {
   console.log('Welcome to Rekit!');
   fs.mkdirSync(prjPath);
 
-  // Download boilerplate from: https://github.com/supnate/rekit-boilerplate-xxx dist branch.
-  const tplRepo = args.template === 'rekit' ? `supnate/rekit-boilerplate#dist` : `supnate/rekit-boilerplate-${args.template}#dist`;
+  // Download boilerplate from: https://github.com/khanghuynh92/rekit-boilerplate-xxx dist branch.
+  const tplRepo = args.template === 'rekit' ? `khanghuynh92/rekit-boilerplate#dist` : `khanghuynh92/rekit-boilerplate#dist`;
   console.log(`Downloading boilerplate from https://github.com/${tplRepo}...`);
   download(tplRepo, prjPath, (err) => {
     if (err) {
