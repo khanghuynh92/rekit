@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
-import styles from '${_.pascalCase(component)}.less';
+import styles from './${_.pascalCase(component)}.scss';
 
 export class ${_.pascalCase(component)} extends Component {
   static propTypes = {

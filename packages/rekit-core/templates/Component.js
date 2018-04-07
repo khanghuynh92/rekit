@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from '${_.pascalCase(component)}.less';
+import styles from './${_.pascalCase(component)}.scss';
 
 export default class ${_.pascalCase(component)} extends Component {
   static propTypes = {
